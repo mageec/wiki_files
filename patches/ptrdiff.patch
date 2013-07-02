@@ -1,0 +1,12 @@
+diff -rupN ctuning-cc-2.5-gcc-4.4.4-ici-2.05-milepost-2.1-original/src-third-party/ppl-0.10.2-modified/src/Generator_System.defs.hh ctuning-cc-2.5-gcc-4.4.4-ici-2.05-milepost-2.1/src-third-party/ppl-0.10.2-modified/src/Generator_System.defs.hh
+--- ctuning-cc-2.5-gcc-4.4.4-ici-2.05-milepost-2.1-original/src-third-party/ppl-0.10.2-modified/src/Generator_System.defs.hh	2009-04-18 06:03:19.000000000 +0100
++++ ctuning-cc-2.5-gcc-4.4.4-ici-2.05-milepost-2.1/src-third-party/ppl-0.10.2-modified/src/Generator_System.defs.hh	2013-06-25 18:55:12.020610797 +0100
+@@ -250,7 +250,7 @@ public:
+   class const_iterator
+     : public std::iterator<std::forward_iterator_tag,
+ 			   Generator,
+-			   ptrdiff_t,
++			   std::ptrdiff_t,
+ 			   const Generator*,
+ 			   const Generator&> {
+   public:
